@@ -3,7 +3,7 @@ from flask import Flask
 from flaskext.mysql import MySQL
 app = Flask(__name__)
 mysql = MySQL()
-
+#
 def get_secret(secret_name):
     try:
         with open('/run/secrets/{0}'.format(secret_name), 'r') as secret_file:
