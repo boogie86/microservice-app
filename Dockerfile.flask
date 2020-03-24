@@ -1,0 +1,18 @@
+FROM ubuntu:16.04
+
+RUN apt-get update -y
+RUN	apt-get install -y python python-setuptools python-dev build-essential python-pip python-mysqldb
+
+COPY ./app.py /app/
+COPY ./requirements.txt /app/requirements.txt
+
+WORKDIR /app
+
+RUN pip install -r requirements.txt
+
+EXPOSE 5000
+
+ENTRYPOINT [ "python" ]
+
+CMD [ "app.py" ]
+

@@ -1,0 +1,17 @@
+FROM mysql:5.7
+
+RUN apt-get update -y
+RUN apt-get install -yq mysql-server
+RUN apt-get install -yq mysql-client
+
+COPY setup.sh initdb.sql /docker-entrypoint-initdb.d/
+WORKDIR /docker-entrypoint-initdb.d
+
+EXPOSE 3306
+
+RUN chmod +x setup.sh
+#RUN service mysql start
+RUN ./setup.sh
+
+
+
