@@ -9,7 +9,7 @@ This is used in the demonstration of development of Ansible Playbooks.
   - Install and Configure Database
   - Start Database Service
   - Install and Configure Web Server
-  - Start Web Server
+  - Start Web Server  
    
 ## 1. Install all required dependencies
   
