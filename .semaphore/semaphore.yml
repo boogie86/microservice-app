@@ -8,7 +8,9 @@ blocks:
   - name: Build
     task:
       jobs:
-        - name: docker build
+        - name: docker build mysql
           commands:
-            - checkout
-            - docker build -t your-image .
+            - docker build -t mysql -f Dockerfile.mysql ./
+        - name: docker build flask
+          commands:
+            - docker build -t flask -f Dockerfile.flask ./
