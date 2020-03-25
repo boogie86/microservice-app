@@ -10,7 +10,7 @@ blocks:
       jobs:
         - name: docker build mysql
           commands:
-            - docker build -t mysql -f Dockerfile.mysql ./
+            - docker build -t mysql -f ../Dockerfile.mysql ./
         - name: docker build flask
           commands:
-            - docker build -t flask -f Dockerfile.flask ./
+            - docker build -t flask -f ../Dockerfile.flask ./
