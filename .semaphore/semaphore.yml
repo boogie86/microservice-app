@@ -8,6 +8,9 @@ blocks:
   - name: Build
     task:
       jobs:
+        - name: pwd
+          commands:
+            - pwd
         - name: docker build mysql
           commands:
             - docker build -t mysql -f ./Dockerfile.mysql ./
