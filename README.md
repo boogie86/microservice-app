@@ -24,7 +24,7 @@ route('/read from database'): Reads and displays the records in the bac-end data
 4. Run the following command: docker-compose up. If everything works as expected, you should see something like this:
 5. Open your browser and navigate to one of the 3 route URLs described above (http://localhost:5000, http://localhost:5000/how are you and http://localhost:5000/read from database):
 
-![alt text](https://imgur.com/7PxsrZJ)
+[Imgur](https://i.imgur.com/7PxsrZJ.jpg)
 
 ## Code setup explained:
 
