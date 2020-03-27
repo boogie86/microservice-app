@@ -74,7 +74,11 @@ Indeed it is.
 
 The Docker Hub repository is integrated with Github, meaning that whenever we commit something to the Github repo, Docker Hub detects it and automatically starts building the 2 containers.   
 
-If everything goes well and the build succeeds, the resulting artifacts are stored in the Docker Hub repo. This tutorial assumes an existing Docker Hub repo with the Automated Build functionality configured. If you don't have one, you can create an account at [hub.docker.com](http://hub.docker.com), create a repo, integrate it with your Github repo and configure the automated builds functionality (one time configuration activity - done from the Docker Hub UI). 
+If everything goes well and the build succeeds, the resulting artifacts are stored in the Docker Hub repo:
+
+![success](images/build_succeeded.jpg)
+
+This tutorial assumes an existing Docker Hub repo with the Automated Build functionality configured. If you don't have one, you can create an account at [hub.docker.com](http://hub.docker.com), create a repo, integrate it with your Github repo and configure the automated builds functionality (one time configuration activity - done from the Docker Hub UI). 
 
 ## Steps for configuring automated builds in Docker Hub:
 
