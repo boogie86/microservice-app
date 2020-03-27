@@ -9,9 +9,6 @@ WORKDIR /docker-entrypoint-initdb.d
 
 EXPOSE 3306
 
-RUN chmod +x setup.sh
+RUN chmod 0755 setup.sh
 #RUN service mysql start
 RUN ./setup.sh
-
-
-

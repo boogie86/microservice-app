@@ -13,7 +13,7 @@ def get_secret(secret_name):
 
 mysql_database_host = 'MYSQL_DATABASE_HOST' in os.environ and os.environ['MYSQL_DATABASE_HOST'] or 'mysql'
 db_pass = get_secret('db_mysql_user_password')
-print("DB Password is: " + str(db_pass))
+#print("DB Password is: " + str(db_pass))
 # MySQL configurations
 app.config['MYSQL_DATABASE_USER'] = 'db_user'
 app.config['MYSQL_DATABASE_PASSWORD'] = db_pass
