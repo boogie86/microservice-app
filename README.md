@@ -74,10 +74,6 @@ Indeed it is.
 
 The Docker Hub repository is integrated with Github, meaning that whenever we commit something to the Github repo, Docker Hub detects it and automatically starts building the 2 containers.   
 
-If everything goes well and the build succeeds, the resulting artifacts are stored in the Docker Hub repo:
-
-![success](images/build_succeeded.jpg)
-
 This tutorial assumes an existing Docker Hub repo with the Automated Build functionality configured. If you don't have one, you can create an account at [hub.docker.com](http://hub.docker.com), create a repo, integrate it with your Github repo and configure the automated builds functionality (one time configuration activity - done from the Docker Hub UI). 
 
 ## Steps for configuring automated builds in Docker Hub:
@@ -92,8 +88,15 @@ This tutorial assumes an existing Docker Hub repo with the Automated Build funct
 
 3. Set the build rules like so:
 
-![builds1](images/dockerhub_builds2.jpg)
+![builds2](images/dockerhub_builds2.jpg)
 
 4. Save your configuration by clicking the Save button.
+
+5. Starting from now, every time you push a change to the Github repo, a build is triggered on the Docker Hub side.  
+You can check the status inside the UI, if it looks like below, congratulations, you have deployed your containers to the Docker Hub repo!
+
+![builds3](images/build_succeeded.jpg)  
+
+
 
 ## Voila! A fully automated CI/CD pipeline for our app, from local all the way to Docker Hub!
