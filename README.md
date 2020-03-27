@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## General description:
 
 This is a simple app with 2 microservices:
@@ -155,8 +154,3 @@ The Docker Hub repository is integrated with Github, meaning that whenever we co
 4. Save your configuration by clicking the Save button.
 
 ## Voila! A fully automated CI/CD pipeline for our app, from local all the way to Docker Hub!
-
-
-
-
->>>>>>> 8695e409ad6df52b042d8469c093a6074a6350db
